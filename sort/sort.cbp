@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="bubble_sort" />
+		<Option title="sort" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -13,6 +13,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../lib" />
+					<Add directory="../sort" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,7 +34,28 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="../lib/al_array.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="../lib/al_array.h" />
+		<Unit filename="../lib/al_bubble_sort.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="../lib/al_bubble_sort.h" />
+		<Unit filename="../lib/al_execution_time.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="../lib/al_execution_time.h" />
+		<Unit filename="../lib/al_insert_sort.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="../lib/al_insert_sort.h" />
+		<Unit filename="../lib/al_swap.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="../lib/al_swap.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
